@@ -1,7 +1,12 @@
 import "./App.css";
+import Gallery from "./components/Gallery";
 
 function App() {
-  return <p className="text-red-600">App</p>;
+  return (
+    <div className="h-screen">
+      <Gallery />
+    </div>
+  );
 }
 
 export default App;
