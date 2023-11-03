@@ -34,6 +34,8 @@ RESTful API /products: https://simple-image-gallery.onrender.com/products
 
 ```bash
   cd simple-gallery/
+  npm run install-client
+  npm run install-server
   npm run install
 ```
 
