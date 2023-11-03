@@ -36,7 +36,7 @@ RESTful API /products: https://simple-image-gallery.onrender.com/products
   cd simple-gallery/
   npm run install-client
   npm run install-server
-  npm run install
+  npm install
 ```
 
 3.) Start the development server
