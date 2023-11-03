@@ -33,7 +33,7 @@ RESTful API /products: https://simple-image-gallery.onrender.com/products
 2.) Install dependencies using npm
 
 ```bash
-  npm install
+  npm run install
 ```
 
 3.) Start the development server
