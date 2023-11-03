@@ -9,7 +9,7 @@ const useImages = (currentPage, pageSize) => {
           Authorization: import.meta.env.VITE_PEXELS_API_KEY,
         },
         params: {
-          page: currentPage,
+          page: (currentPage - 1) * pageSize,
           per_page: pageSize,
         },
       })
@@ -18,6 +18,8 @@ const useImages = (currentPage, pageSize) => {
   return useQuery({
     queryKey: ["images", currentPage, pageSize],
     queryFn: fetchImages,
+    staleTime: 1 * 60 * 1000,
+    keepPreviousData: true,
   });
 };
 
